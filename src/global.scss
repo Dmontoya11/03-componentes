@@ -24,3 +24,25 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.rojo, .rojo .sc-ion-action-sheet-md {
+    color:rgba(255, 27, 27, 0.778) !important;
+}
+
+.orange, .orange .sc-ion-action-sheet-md {
+    color: rgb(255, 174, 0) !important;
+}
+
+.blue, .blue .sc-ion-action-sheet-md {
+    color:rgb(28, 111, 220) !important;
+}
+
+.pink, .pink .sc-ion-action-sheet-md {
+    color:lightpink !important;
+}
+
+
+ion-item {
+    --background: transparent;
+}

@@ -1,0 +1,35 @@
+<app-header titulo="Grid"></app-header>
+
+<ion-content class="ion-padding" fullscreen>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col  size="12" size-lg="3" size-md="4" size-sm="6"
+                *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]"> 
+
+        <ion-card>
+
+          <ion-img src="/assets/Saul-goodman.jpg"></ion-img>
+          
+        </ion-card>
+
+        <!-- <ion-header>
+          <ion-toolbar color="discord">
+            <ion-title> Comics </ion-title>
+          </ion-toolbar>
+        </ion-header> -->
+
+          <ion-card-header>
+            <ion-card-title> Saul Goodman </ion-card-title>
+              <ion-card-subtitle> Better call Saul </ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae et sunt deserunt pariatur cupiditate sed repellendus molestias accusantium, quisquam, saepe porro quaerat nesciunt error voluptatum ipsa sapiente. Nam, repudiandae odit.
+          </ion-card-content>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

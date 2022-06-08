@@ -1,0 +1,102 @@
+<app-header titulo="Card"></app-header>
+
+<ion-content fullscreen>
+
+  <ion-card mode="ios">
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <ion-card mode="ios">
+      <ion-item color="tertiary">
+        <ion-icon slot="end" name="location-outline"></ion-icon>
+        <ion-label slot="start">Marcador</ion-label>
+      </ion-item>
+
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aliquid. Corporis fuga adipisci praesentium, suscipit qui numquam libero alias cupiditate ad velit itaque eligendi exercitationem eveniet sit, ipsa aliquid quis!
+      </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-card mode="ios">
+      <ion-item color="secondary">
+        <ion-icon slot="end" name="images-outline"></ion-icon>
+        <ion-label>Imagen</ion-label>
+      </ion-item>
+
+      <ion-card-content>
+        <ion-img src="/assets/Santiago-bernabeu.jpeg"></ion-img>
+      </ion-card-content>
+
+      <ion-card-content>
+            <h1> Santiago Bernabeu </h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis a officia, id aspernatur molestias quaerat eaque sapiente natus nam ad laboriosam aliquid velit in ex amet culpa. Inventore, alias!
+      </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-card mode="ios">
+    <ion-item color="tertiary">
+      <ion-icon slot="end" name="videocam-outline"></ion-icon>
+      <ion-label slot="start">Videos</ion-label>
+    </ion-item>
+
+    <img src="https://www.cambiodecamiseta.com/wp-content/uploads/2018/02/Allianz-Arena.jpg" alt="">
+
+    <ion-card-content>
+      <h1> Allianz Arena </h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae et sunt deserunt pariatur cupiditate sed repellendus molestias accusantium, quisquam, saepe porro quaerat nesciunt error voluptatum ipsa sapiente. Nam, repudiandae odit.
+    </ion-card-content>
+    
+    <ion-card-content >
+      <ion-buttons >
+
+        <ion-grid>
+          <ion-row >
+            <ion-col size="6">          
+              
+              <ion-button expand="block" fill="clear" (click)="onClick()" >
+              <ion-icon slot="icon-only" 
+                        [name]=" like ? 'heart': 'heart-outline'" color="danger"></ion-icon>
+            </ion-button>  
+
+          </ion-col>
+          <ion-col size="6">
+              
+              <ion-button expand="block" fill="clear" (click)="OnClick()" >
+              <ion-icon slot="icon-only"
+                        [name]="favorito ? 'star': 'star-outline'" color="warning"></ion-icon>
+            </ion-button > </ion-col>
+
+          </ion-row>
+        </ion-grid>
+
+          <!-- <ion-button (click)="onClick()">
+            <ion-icon slot="icon-only" 
+                      [name]=" like ? 'heart': 'heart-outline'" color="danger"></ion-icon>
+          </ion-button>  -->
+      
+          <!-- <ion-button (click)="OnClick()" >
+            <ion-icon slot="icon-only"
+                      [name]="favorito ? 'star': 'star-outline'" color="warning"></ion-icon>
+          </ion-button >  -->
+
+      </ion-buttons>
+  
+    </ion-card-content>
+
+  </ion-card>
+  
+</ion-content>
